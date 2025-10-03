@@ -77,4 +77,7 @@
       />
     </svg>
   </section>
+  {% for item in sidebysides.home %}
+    {% include "partials/side-by-side.html" %}
+  {% endfor %}
 {% endblock %}
