@@ -162,8 +162,32 @@ header {
   }
 }
 
-@media (min-width: 64rem) {
+@media (min-width: 80rem) {
   .hero {
     background-image: url("/assets/images/home-hero-desktop.jpg");
+    text-align: start;
+    place-content: start;
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      max-width: 31.25rem;
+      p {
+        max-width: 23.3125rem;
+      }
+
+      .inner-content {
+        align-self: flex-end;
+      }
+    }
+    .arrow {
+      bottom: 9.8125rem;
+      left: 44rem;
+    }
+
+    .circles {
+      bottom: 10.2813rem;
+      right: -3rem;
+    }
   }
 }
