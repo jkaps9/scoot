@@ -1,0 +1,17 @@
+{
+    "name": "Scoot",
+    "navigation": [
+    {
+      "text": "About",
+      "url": "/about/"
+    },
+    {
+      "text": "Location",
+      "url": "/location/"
+    },
+    {
+      "text": "Careers",
+      "url": "/careers/"
+    }
+    ]
+}
