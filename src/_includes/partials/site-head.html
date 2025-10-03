@@ -1,26 +1,43 @@
 <header>
-    <div class="container">
-        <div class="navbar">
-            <button class="nav-toggle">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16">
-                    <g fill="#FCB72B" fill-rule="evenodd">
-                        <path d="M0 0h19.692v3.692H0zM0 6.154h19.692v3.692H0zM0 12.308h19.692V16H0z"/>
-                    </g>
-                </svg>
-            </button>
-            <a href="/" class="logo" aria-label="{{ site.name }} - home">
-                {% include "partials/logo.svg" %}
-            </a>
-            <nav class="main-nav" role="navigation" aria-label="main">
-                <ul class="nav__list">
-                    {% for item in site.navigation %}
-                        <li class="nav__item">
-                            <a href="{{ item.url }}">{{ item.text }}</a>
-                        </li>
-                    {% endfor %}
-                </ul>
-            </nav>
-            <a href="#" class="btn--solid cta">Get Scootin</a>
-        </div>
+  <div class="container">
+    <div class="navbar">
+      <button class="nav-toggle">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="16"
+        >
+          <g
+            fill="#FCB72B"
+            fill-rule="evenodd"
+          >
+            <path
+              d="M0 0h19.692v3.692H0zM0 6.154h19.692v3.692H0zM0 12.308h19.692V16H0z"
+            />
+          </g>
+        </svg>
+      </button>
+      <a
+        href="/"
+        class="logo"
+        aria-label="{{ site.name }} - home"
+      >
+        {% include "partials/logo.svg" %}
+      </a>
+      <nav
+        class="main-nav"
+        role="navigation"
+        aria-label="main"
+      >
+        <ul class="nav__list">
+          {% for item in site.navigation %}
+            <li class="nav__item">
+              <a href="{{ item.url }}">{{ item.text }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+      {% include "partials/cta-button.html" %}
     </div>
+  </div>
 </header>

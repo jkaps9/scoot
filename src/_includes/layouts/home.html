@@ -1,5 +1,14 @@
 {% extends "layouts/base.html" %}
 {% block content %}
-<h1>Scoot</h1>
-<a href="#" class="btn--solid">Button</a>
+  <section class="hero">
+    <div class="container">
+      <h1>Scooter sharing made simple</h1>
+      <p>
+        Scoot takes the hassle out of urban mobility. Our bikes are placed in
+        convenient locations in each of our cities. Use our app to locate the
+        nearest bike, unlock it with a tap, and you’re away!
+      </p>
+      {% include "partials/cta-button.html" %}
+    </div>
+  </section>
 {% endblock %}
