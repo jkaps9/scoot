@@ -23,12 +23,12 @@ h5,
 h6 {
   font-family: "Space Mono", sans-serif;
   line-height: 1;
+  letter-spacing: -0.04em;
   color: map.get(variables.$colors, "dark-navy");
 }
 
 h2 {
   font-size: clamp(2rem, 1.0458rem + 4.0712vw, 3rem);
-  letter-spacing: -1.43px;
 }
 
 a {
@@ -107,7 +107,6 @@ header {
   }
   h1 {
     font-size: clamp(2.5rem, 2.1479rem + 1.5023vw, 3.5rem);
-    letter-spacing: -1.79px;
     color: inherit;
   }
 
@@ -144,6 +143,7 @@ header {
     margin-top: 3.5rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 2rem;
   }
 
@@ -195,6 +195,31 @@ header {
       height: auto;
       bottom: 3em;
       right: -2rem;
+    }
+  }
+
+  .side-by-side {
+    .content {
+      max-width: 75%;
+    }
+  }
+}
+
+@media (min-width: 64rem) {
+  .side-by-side {
+    .container {
+      text-align: start;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &:nth-child(even) .container {
+      flex-direction: row-reverse;
+    }
+
+    .content {
+      max-width: 445px;
+      align-items: flex-start;
     }
   }
 }
