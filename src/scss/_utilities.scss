@@ -1,0 +1,17 @@
+@use "variables";
+@use "sass:map";
+
+.btn--solid {
+    display: inline-block;
+    background-color: map.get(variables.$colors, "yellow");    
+    color: map.get(variables.$colors, "white");
+    border: 1px solid map.get(variables.$colors, "yellow");    
+    font-family: "Space Mono", sans-serif;
+    font-weight: bold;
+    padding: 1em 3em;
+
+    &:hover {
+        background-color: map.get(variables.$colors, "white");
+        color: map.get(variables.$colors, "yellow");    
+    }
+}
