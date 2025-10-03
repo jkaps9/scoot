@@ -1,8 +1,8 @@
-const path = require("node:path");
-const sass = require("sass");
-const MarkdownIt = require("markdown-it");
+import path from "node:path";
+import * as sass from "sass";
+import MarkdownIt from "markdown-it";
 
-module.exports = (config) => {
+export default function (config) {
   // add SCSS template format
   config.addTemplateFormats("scss");
 
