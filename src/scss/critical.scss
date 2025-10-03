@@ -12,6 +12,7 @@ body {
   line-height: 1.6;
 
   background-color: map.get(variables.$colors, "white");
+  color: map.get(variables.$colors, "dim-grey");
 }
 
 h1,
@@ -22,6 +23,12 @@ h5,
 h6 {
   font-family: "Space Mono", sans-serif;
   line-height: 1;
+  color: map.get(variables.$colors, "dark-navy");
+}
+
+h2 {
+  font-size: clamp(2rem, 1.0458rem + 4.0712vw, 3rem);
+  letter-spacing: -1.43px;
 }
 
 a {
@@ -101,6 +108,7 @@ header {
   h1 {
     font-size: clamp(2.5rem, 2.1479rem + 1.5023vw, 3.5rem);
     letter-spacing: -1.79px;
+    color: inherit;
   }
 
   p {
@@ -115,6 +123,34 @@ header {
 
   .circles,
   .line {
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+  }
+}
+
+.side-by-side {
+  margin: 7.5rem 0;
+
+  .container {
+    text-align: center;
+    place-items: center;
+  }
+
+  img {
+    border-radius: 100vw;
+  }
+  .content {
+    margin-top: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .left-downward-arrow,
+  .right-arrow,
+  .semi-circles {
+    // TODO: position svgs appropriately
     visibility: hidden;
     height: 0;
     position: absolute;
