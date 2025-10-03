@@ -6,10 +6,12 @@
 
 // Global Styles
 body {
-    font-family: "Lexend Deca", sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 1.6;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+
+  background-color: map.get(variables.$colors, "white");
 }
 
 a {
@@ -21,3 +23,49 @@ button {
   cursor: pointer;
 }
 
+// Header
+header {
+  .navbar {
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    margin-right: 3.625rem;
+  }
+
+  .nav__list {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .nav__item {
+    font-family: "Space Mono", sans-serif;
+  }
+
+  .cta {
+    margin-left: auto;
+  }
+
+  .main-nav {
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+  }
+}
+
+@media (min-width: 48rem) {
+  header {
+    .nav-toggle {
+      visibility: hidden;
+      height: 0;
+      position: absolute;
+    }
+    .main-nav {
+      visibility: visible;
+      height: auto;
+      position: relative;
+    }
+  }
+}
