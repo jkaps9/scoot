@@ -29,10 +29,20 @@ header {
     padding: 2rem 0;
     display: flex;
     align-items: center;
+
+    position: relative;
+  }
+
+  .nav-toggle {
+    position: absolute;
+    left: 0;
+
+    background: none;
+    border: none;
   }
 
   .logo {
-    margin-right: 3.625rem;
+    margin: 0 auto;
   }
 
   .nav__list {
@@ -53,6 +63,18 @@ header {
     height: 0;
     position: absolute;
   }
+
+  .main-nav.visible {
+    visibility: visible;
+    height: auto;
+    position: absolute;
+  }
+
+  .cta {
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+  }
 }
 
 @media (min-width: 48rem) {
@@ -62,10 +84,21 @@ header {
       height: 0;
       position: absolute;
     }
+
     .main-nav {
       visibility: visible;
       height: auto;
       position: relative;
+    }
+
+    .cta {
+      visibility: visible;
+      height: auto;
+      position: relative;
+    }
+
+    .logo {
+      margin-right: 3.625rem;
     }
   }
 }
