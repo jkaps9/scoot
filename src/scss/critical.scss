@@ -113,7 +113,8 @@ header {
     bottom: 2rem;
   }
 
-  .circles {
+  .circles,
+  .line {
     visibility: hidden;
     height: 0;
     position: absolute;
@@ -172,12 +173,10 @@ header {
       display: flex;
       flex-direction: column;
       max-width: 31.25rem;
-      p {
-        max-width: 23.3125rem;
-      }
 
       .inner-content {
         align-self: flex-end;
+        max-width: 25rem;
       }
     }
     .arrow {
@@ -188,6 +187,13 @@ header {
     .circles {
       bottom: 10.2813rem;
       right: -3rem;
+    }
+
+    .line {
+      visibility: visible;
+      height: auto;
+      top: 50%;
+      left: 0;
     }
   }
 }
