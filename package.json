@@ -1,0 +1,29 @@
+{
+  "name": "scoot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-ghpages": "npx @11ty/eleventy --pathprefix=/scoot/",
+    "start": "npx eleventy --serve",
+    "lint": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jkaps9/scoot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/jkaps9/scoot/issues"
+  },
+  "homepage": "https://github.com/jkaps9/scoot#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "@11ty/eleventy-img": "^6.0.4",
+    "sass": "^1.93.2"
+  }
+}
