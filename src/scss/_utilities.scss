@@ -2,23 +2,29 @@
 @use "sass:map";
 
 .btn--solid {
-    display: inline-block;
-    background-color: map.get(variables.$colors, "yellow");    
-    color: map.get(variables.$colors, "white");
-    border: 1px solid map.get(variables.$colors, "yellow");    
-    font-family: "Space Mono", sans-serif;
-    font-weight: bold;
-    padding: 1em 3em;
+  display: inline-block;
+  background-color: map.get(variables.$colors, "yellow");
+  color: map.get(variables.$colors, "white");
+  border: 1px solid map.get(variables.$colors, "yellow");
+  font-family: "Space Mono", sans-serif;
+  font-weight: bold;
+  padding: 1em 3em;
 
-    &:hover {
-        background-color: map.get(variables.$colors, "white");
-        color: map.get(variables.$colors, "yellow");    
-    }
+  &:hover {
+    background-color: map.get(variables.$colors, "white");
+    color: map.get(variables.$colors, "yellow");
+  }
 }
 
 .container {
-    max-width: 1110px;
+  max-width: 1110px;
+  width: 83%;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media (min-width: 48rem) {
+  .container {
     width: 90%;
-    margin: 0 auto;
-    position: relative;
+  }
 }

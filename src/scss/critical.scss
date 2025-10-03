@@ -21,6 +21,7 @@ h4,
 h5,
 h6 {
   font-family: "Space Mono", sans-serif;
+  line-height: 1;
 }
 
 a {
@@ -83,6 +84,27 @@ header {
     visibility: hidden;
     height: 0;
     position: absolute;
+  }
+}
+
+.hero {
+  text-align: center;
+  place-content: center;
+  color: map.get(variables.$colors, "white");
+  background-image: url("/assets/images/home-hero-mobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 40.625rem;
+
+  h1 {
+    font-size: clamp(2.5rem, 2.1479rem + 1.5023vw, 3.5rem);
+    letter-spacing: -1.79px;
+  }
+
+  .arrow {
+    position: absolute;
+    left: -100%;
+    top: 100%;
   }
 }
 
