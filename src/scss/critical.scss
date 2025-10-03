@@ -33,7 +33,6 @@ button {
   cursor: pointer;
 }
 
-// Header
 header {
   .navbar {
     padding: 2rem 0;
@@ -106,6 +105,12 @@ header {
     left: -100%;
     top: 100%;
   }
+
+  .circles {
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+  }
 }
 
 @media (min-width: 48rem) {
@@ -131,6 +136,22 @@ header {
     .logo {
       margin-left: 0;
       margin-right: 3.625rem;
+    }
+  }
+
+  .hero {
+    background-image: url("/assets/images/home-hero-tablet.jpg");
+
+    .arrow {
+      left: -10%;
+      top: 120%;
+    }
+
+    .circles {
+      visibility: visible;
+      height: auto;
+      top: 160%;
+      right: -10%;
     }
   }
 }
