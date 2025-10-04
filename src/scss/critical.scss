@@ -225,6 +225,9 @@ footer {
 
     .logo {
       margin-bottom: 2.5rem;
+      path {
+        fill: map.get(variables.$colors, "white");
+      }
     }
 
     .nav__list {
