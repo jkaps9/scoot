@@ -27,6 +27,11 @@ h6 {
   color: map.get(variables.$colors, "dark-navy");
 }
 
+h1 {
+  font-size: clamp(2.5rem, 2.1479rem + 1.5023vw, 3.5rem);
+  color: inherit;
+}
+
 h2 {
   font-size: clamp(2rem, 1.0458rem + 4.0712vw, 3rem);
 }
@@ -109,10 +114,6 @@ header {
 
   .container {
     padding-top: clamp(7.1875rem, 6.3512rem + 3.5681vw, 9.5625rem);
-  }
-  h1 {
-    font-size: clamp(2.5rem, 2.1479rem + 1.5023vw, 3.5rem);
-    color: inherit;
   }
 
   p {
@@ -240,6 +241,28 @@ footer {
   }
 }
 
+.page-header {
+  position: relative;
+  min-height: clamp(10rem, 7.6145rem + 10.1781vw, 12.5rem);
+  display: flex;
+  place-items: center;
+
+  .bg-image,
+  .circles {
+    position: absolute;
+  }
+
+  .circles {
+    visibility: hidden;
+    height: 0;
+  }
+
+  h1 {
+    text-align: center;
+    color: map.get(variables.$colors, "white");
+  }
+}
+
 @media (min-width: 48rem) {
   .navbar {
     .logo {
@@ -332,6 +355,22 @@ footer {
       .logo {
         margin-bottom: 0;
       }
+    }
+  }
+
+  .page-header {
+    .container {
+      margin: auto;
+    }
+
+    h1 {
+      text-align: start;
+    }
+
+    .circles {
+      visibility: visible;
+      height: auto;
+      right: -1rem;
     }
   }
 }

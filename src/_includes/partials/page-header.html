@@ -1,9 +1,30 @@
 <section class="page-header">
   <div class="bg-image">
-    <img
-      src="{{ bgImageMobile }}"
-      alt="{{ pageTitle }} background"
-    />
+    <picture>
+      <!-- Desktop (1240px and up) -->
+      <source
+        media="(min-width: 1240px)"
+        srcset="{{ bgImageDesktop }}"
+      />
+
+      <!-- Tablet (768px to 1439px) -->
+      <source
+        media="(min-width: 768px)"
+        srcset="{{ bgImageTablet }}"
+      />
+
+      <!-- Mobile (up to 767px) -->
+      <source
+        media="(max-width: 767px)"
+        srcset="{{ bgImageMobile }}"
+      />
+
+      <!-- Fallback image -->
+      <img
+        src="{{ bgImageMobile }}"
+        alt="{{ pageTitle }} background"
+      />
+    </picture>
   </div>
   <div class="container">
     <h1>{{ pageTitle }}</h1>
