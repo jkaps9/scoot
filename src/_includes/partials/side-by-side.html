@@ -7,12 +7,14 @@
     <div class="content">
       <h2>{{ item.title }}</h2>
       <p>{{ item.description }}</p>
-      <a
-        href="/about/"
-        class="btn--solid"
-      >
-        Learn More
-      </a>
+      {% if includeButton %}
+        <a
+          href="/about/"
+          class="btn--solid"
+        >
+          Learn More
+        </a>
+      {% endif %}
     </div>
   </div>
   {% include "partials/left-downward-arrow.svg" %}

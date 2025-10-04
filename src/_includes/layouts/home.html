@@ -49,6 +49,7 @@
     </svg>
   </section>
   {% for item in sidebysides.home %}
+    {% set includeButton = true %}
     {% include "partials/side-by-side.html" %}
   {% endfor %}
 {% endblock %}
