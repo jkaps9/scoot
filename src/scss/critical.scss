@@ -40,22 +40,12 @@ button {
   cursor: pointer;
 }
 
-header {
-  .navbar {
-    padding: 2rem 0;
-    display: flex;
-    align-items: center;
+.navbar {
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
 
-    position: relative;
-  }
-
-  .nav-toggle {
-    position: absolute;
-    left: 0;
-
-    background: none;
-    border: none;
-  }
+  position: relative;
 
   .logo {
     margin: 0 auto;
@@ -69,9 +59,15 @@ header {
   .nav__item {
     font-family: "Space Mono", sans-serif;
   }
+}
 
-  .cta {
-    margin-left: auto;
+header {
+  .nav-toggle {
+    position: absolute;
+    left: 0;
+
+    background: none;
+    border: none;
   }
 
   .main-nav {
@@ -84,6 +80,10 @@ header {
     visibility: visible;
     height: auto;
     position: absolute;
+  }
+
+  .cta {
+    margin-left: auto;
   }
 
   .cta {
@@ -186,6 +186,13 @@ header {
 }
 
 @media (min-width: 48rem) {
+  .navbar {
+    .logo {
+      margin-left: 0;
+      margin-right: 3.625rem;
+    }
+  }
+
   header {
     .nav-toggle {
       visibility: hidden;
@@ -203,11 +210,6 @@ header {
       visibility: visible;
       height: auto;
       position: relative;
-    }
-
-    .logo {
-      margin-left: 0;
-      margin-right: 3.625rem;
     }
   }
 
