@@ -1,0 +1,53 @@
+<footer>
+  <section class="cta">
+    <div class="container">
+      <div class="content">
+        <h2>Sign up and Scoot off today</h2>
+      </div>
+      <div class="buttons">
+        <a href="#">{% include "partials/app-store.svg" %}</a>
+        <a href="#">{% include "partials/google-play.svg" %}</a>
+      </div>
+    </div>
+    {% include "partials/semi-circles.svg" %}
+  </section>
+  <section class="navbar">
+    <div class="container">
+      <a
+        href="/"
+        class="logo"
+        aria-label="{{ site.name }} - home"
+      >
+        {% include "partials/logo.svg" %}
+      </a>
+      <nav
+        class="footer-nav"
+        role="navigation"
+        aria-label="footer"
+      >
+        <ul class="nav__list">
+          {% for item in site.navigation %}
+            <li class="nav__item">
+              <a href="{{ item.url }}">{{ item.text }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+      <ul class="socials__list">
+        <li>
+          <a href="https://facebook.com">
+            {% include "partials/facebook.svg" %}
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com">{% include "partials/twitter.svg" %}</a>
+        </li>
+        <li>
+          <a href="https://instagram.com">
+            {% include "partials/instagram.svg" %}
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+</footer>
