@@ -222,7 +222,8 @@ footer {
 
   .navbar {
     flex-direction: column;
-
+    padding: clamp(2rem, 5.9084rem + -8.1425vw, 4rem) 0
+      clamp(2rem, 8.8397rem + -14.2494vw, 5.5rem);
     .logo {
       margin-bottom: 2.5rem;
       path {
