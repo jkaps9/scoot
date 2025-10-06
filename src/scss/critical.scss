@@ -264,8 +264,9 @@ footer {
 }
 
 .process {
-  margin: 7.5rem 0;
+  padding: 7.5rem 0;
   text-align: center;
+
   .container {
     display: flex;
     flex-direction: column;
@@ -283,6 +284,11 @@ footer {
     gap: clamp(1.5rem, 1.1479rem + 1.5023vw, 2.5rem);
   }
 
+  .line {
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+  }
   // TODO: reduce size of icons
 }
 
@@ -399,6 +405,29 @@ footer {
 
   .process {
     text-align: start;
+    position: relative;
+    $icon-width: 6rem;
+
+    .line {
+      $line-width: 32rem;
+      $line-height: 1rem;
+
+      visibility: visible;
+      height: auto;
+      width: $line-width;
+      height: $line-height;
+      background-color: map.get(variables.$colors, "light-grey");
+      top: 0;
+
+      // half of line width less half of the height
+      $line-offset: calc($line-width/2 - $line-height/2);
+
+      // 5% is left half of the container "padding"
+      left: calc(-1 * ($line-offset - $icon-width/2) + 5%);
+      top: calc($line-offset);
+      rotate: 90deg;
+    }
+
     .process__item {
       flex-direction: row;
     }
