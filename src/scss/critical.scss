@@ -36,6 +36,10 @@ h2 {
   font-size: clamp(2rem, 1.0458rem + 4.0712vw, 3rem);
 }
 
+h4 {
+  font-size: 1.5rem;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -43,6 +47,10 @@ a {
 
 button {
   cursor: pointer;
+}
+
+img {
+  max-width: 100%;
 }
 
 .navbar {
@@ -290,6 +298,51 @@ footer {
     position: absolute;
   }
   // TODO: reduce size of icons
+}
+
+.values {
+  text-align: center;
+
+  .container,
+  .content,
+  .value__item {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+  }
+
+  .content {
+    gap: 1.5rem;
+  }
+
+  figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      max-height: 15rem;
+      max-width: 15rem;
+      border-radius: 100vw;
+    }
+
+    figcaption {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      border-radius: 100vw;
+      background-color: map.get(variables.$colors, "yellow");
+      $size: 6rem;
+      width: $size;
+      height: $size;
+      margin-top: calc(-1 * $size/2);
+    }
+  }
+
+  .value__item {
+    gap: 1rem;
+  }
 }
 
 @media (min-width: 48rem) {
