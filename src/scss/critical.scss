@@ -41,7 +41,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: clamp(1.125rem, 0.7672rem + 1.5267vw, 1.5rem);
 }
 
 a {
@@ -374,6 +374,7 @@ footer {
   }
 
   .faq__item-container {
+    flex-grow: 1;
     gap: 1rem;
   }
 
@@ -393,6 +394,18 @@ footer {
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
+  }
+
+  .faq__item--answer {
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+  }
+
+  .faq__item--answer.visible {
+    visibility: visible;
+    height: auto;
+    position: relative;
   }
 }
 
