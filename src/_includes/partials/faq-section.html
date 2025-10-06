@@ -7,10 +7,10 @@
     {% for q in item.questions %}
       <div class="faq__item">
         <div class="faq__item--title-row">
-          <h3>{{ q.question }}</h3>
+          <h3 class="faq__item--question">{{ q.question }}</h3>
           {% include "svgs/chevron.svg" %}
         </div>
-        <p>{{ q.answer }}</p>
+        <p class="faq__item--answer">{{ q.answer }}</p>
       </div>
     {% endfor %}
   </div>
