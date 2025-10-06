@@ -272,7 +272,8 @@ footer {
     gap: 3rem;
   }
 
-  .process__item {
+  .process__item,
+  .process__item .content {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -389,6 +390,13 @@ footer {
       visibility: visible;
       height: auto;
       right: -1rem;
+    }
+  }
+
+  .process {
+    text-align: start;
+    .process__item {
+      flex-direction: row;
     }
   }
 }
