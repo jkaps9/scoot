@@ -366,7 +366,7 @@ footer {
   .faq__item {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: clamp(3rem, 2.0458rem + 4.0712vw, 4rem);
   }
 
   .faq__section {
@@ -610,6 +610,17 @@ footer {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: calc(2rem - 2px);
+    }
+  }
+
+  .faq {
+    .faq__section {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .faq__item-container {
+      max-width: 50vw;
     }
   }
 }
