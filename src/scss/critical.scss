@@ -408,6 +408,10 @@ footer {
     position: relative;
   }
 
+  .chevron {
+    transition: rotate 0.3s ease-in-out;
+  }
+
   .faq__item:has(.faq__item--answer.visible) .chevron {
     rotate: 180deg;
   }
