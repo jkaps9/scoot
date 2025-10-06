@@ -263,6 +263,24 @@ footer {
   }
 }
 
+.process {
+  margin: 7.5rem 0;
+  text-align: center;
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .process__item {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  // TODO: reduce size of icons
+}
+
 @media (min-width: 48rem) {
   .navbar {
     .logo {
