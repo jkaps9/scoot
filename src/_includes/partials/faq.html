@@ -2,8 +2,9 @@
   <div class="container">
     <h2>FAQs</h2>
     <div class="faqs-container">
-      {% set sectionTitle = "How it works" %}
-      {% include "partials/faq-section.html" %}
+      {% for item in faqs.items %}
+        {% include "partials/faq-section.html" %}
+      {% endfor %}
     </div>
   </div>
 </section>

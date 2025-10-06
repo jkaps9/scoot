@@ -1,20 +1,17 @@
 <div class="faq__section">
   <div class="faq__header">
-    <h3>{{ sectionTitle }}</h3>
+    <h3>{{ item.title }}</h3>
   </div>
 
   <div class="faq__item-container">
-    <div class="faq__item">
-      <div class="faq__item--title-row">
-        <h3>How do I download the app?</h3>
-        {% include "svgs/chevron.svg" %}
+    {% for q in item.questions %}
+      <div class="faq__item">
+        <div class="faq__item--title-row">
+          <h3>{{ q.question }}</h3>
+          {% include "svgs/chevron.svg" %}
+        </div>
+        <p>{{ q.answer }}</p>
       </div>
-      <p>
-        To download the Scoot app, you can search “Scoot” in both the App and
-        Google Play stores. An even simpler way to do it would be to click the
-        relevant link at the bottom of this page and you’ll be re-directed to
-        the correct page.
-      </p>
-    </div>
+    {% endfor %}
   </div>
 </div>
