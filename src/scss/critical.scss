@@ -409,7 +409,7 @@ footer {
     $icon-width: 6rem;
 
     .line {
-      $line-width: 32rem;
+      $line-width: 67vw;
       $line-height: 1rem;
 
       visibility: visible;
@@ -478,6 +478,14 @@ footer {
   }
 
   .process {
+    .line {
+      rotate: none;
+      left: 0;
+      $padding: 7.5rem;
+      $icon-height: 6rem;
+      top: calc($padding + $icon-height/2);
+    }
+
     .container {
       flex-direction: row;
       justify-content: space-between;
