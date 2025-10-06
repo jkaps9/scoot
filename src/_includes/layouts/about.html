@@ -1,4 +1,8 @@
 {% extends "layouts/base.html" %}
 {% block content %}
   {% include "partials/page-header.html" %}
+  {% for item in sidebysides.about %}
+    {% include "partials/side-by-side.html" %}
+  {% endfor %}
+  {% include "partials/values.html" %}
 {% endblock %}
