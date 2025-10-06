@@ -407,6 +407,10 @@ footer {
     height: auto;
     position: relative;
   }
+
+  .faq__item:has(.faq__item--answer.visible) .chevron {
+    rotate: 180deg;
+  }
 }
 
 @media (min-width: 48rem) {
