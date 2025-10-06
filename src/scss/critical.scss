@@ -301,11 +301,17 @@ footer {
 }
 
 .values {
+  padding: 7.5rem 0;
   text-align: center;
+
+  h2 {
+    margin-bottom: 0.5rem;
+  }
 
   .container,
   .content,
-  .value__item {
+  .value__item,
+  .item-container {
     display: flex;
     flex-direction: column;
     gap: 3.5rem;
@@ -341,7 +347,7 @@ footer {
   }
 
   .value__item {
-    gap: 1rem;
+    gap: clamp(1rem, 0.6479rem + 1.5023vw, 2rem);
   }
 }
 
@@ -485,6 +491,12 @@ footer {
       flex-direction: row;
     }
   }
+
+  .values {
+    h2 {
+      margin-bottom: 3.5rem;
+    }
+  }
 }
 
 @media (min-width: 64rem) {
@@ -545,6 +557,14 @@ footer {
     }
     .process__item {
       flex-direction: column;
+    }
+  }
+
+  .values {
+    .item-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: calc(2rem - 2px);
     }
   }
 }
