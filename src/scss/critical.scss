@@ -498,6 +498,7 @@ footer {
 
 @media (min-width: 80rem) {
   .hero {
+    // TODO: fix svgs to be more dynamic so they adapt with the screen
     background-image: url("/assets/images/home-hero-desktop.jpg");
     text-align: start;
     place-content: start;
