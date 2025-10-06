@@ -269,7 +269,7 @@ footer {
   .container {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: clamp(1.875rem, 3.3961rem + -1.6901vw, 3rem);
   }
 
   .process__item,
@@ -277,6 +277,10 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+  }
+
+  .process__item {
+    gap: clamp(1.5rem, 1.1479rem + 1.5023vw, 2.5rem);
   }
 
   // TODO: reduce size of icons
@@ -441,6 +445,16 @@ footer {
         text-align: start;
         margin-bottom: 0;
       }
+    }
+  }
+
+  .process {
+    .container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .process__item {
+      flex-direction: column;
     }
   }
 }
