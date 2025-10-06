@@ -36,6 +36,10 @@ h2 {
   font-size: clamp(2rem, 1.0458rem + 4.0712vw, 3rem);
 }
 
+h3 {
+  font-size: clamp(1.125rem, 0.6408rem + 2.0657vw, 2.5rem);
+}
+
 h4 {
   font-size: 1.5rem;
 }
@@ -348,6 +352,47 @@ footer {
 
   .value__item {
     gap: clamp(1rem, 0.6479rem + 1.5023vw, 2rem);
+  }
+}
+
+.faq {
+  margin: 7.5rem 0;
+  text-align: center;
+
+  .container,
+  .faqs-container,
+  .faq__section,
+  .faq__item-container,
+  .faq__item {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .faq__section {
+    gap: 2rem;
+  }
+
+  .faq__item-container {
+    gap: 1rem;
+  }
+
+  .faq__item {
+    gap: 1.5rem;
+    background-color: map.get(variables.$colors, "snow");
+    padding: 2rem 1.75rem;
+    text-align: start;
+
+    p {
+      color: map.get(variables.$colors, "dark-navy");
+    }
+  }
+
+  .faq__item--title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
   }
 }
 
