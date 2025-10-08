@@ -74,11 +74,20 @@ img {
 
   .nav__item {
     font-family: "Space Mono", sans-serif;
+
+    &:hover {
+      color: map.get(variables.$colors, "yellow");
+    }
   }
 
   .socials__list {
     display: flex;
+    align-items: center;
     gap: 1.5rem;
+
+    svg:hover path {
+      fill: map.get(variables.$colors, "light-grey");
+    }
   }
 }
 

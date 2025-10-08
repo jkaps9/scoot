@@ -11,7 +11,7 @@
   padding: 1em 3em;
 
   &:hover {
-    background-color: map.get(variables.$colors, "white");
+    background-color: transparent;
     color: map.get(variables.$colors, "yellow");
   }
 }
