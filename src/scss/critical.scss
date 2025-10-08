@@ -98,6 +98,25 @@ header {
 
     background: none;
     border: none;
+
+    svg.close {
+      visibility: hidden;
+      height: 0;
+      position: absolute;
+    }
+
+    &:has(~ .main-nav.visible) {
+      svg.close {
+        visibility: visible;
+        height: auto;
+        position: relative;
+      }
+      svg.hamburger {
+        visibility: hidden;
+        height: 0;
+        position: absolute;
+      }
+    }
   }
 
   .main-nav {
