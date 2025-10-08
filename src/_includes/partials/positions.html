@@ -1,0 +1,20 @@
+<section class="positions">
+  <div class="container">
+    <ul class="position__list">
+      {% for position in positions.positions %}
+        <li class="position__item">
+          <div class="content">
+            <h4>{{ position.jobTitle }}</h4>
+            <p>{{ position.location }}</p>
+          </div>
+          <a
+            href="#"
+            class="btn--solid"
+          >
+            Apply
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
