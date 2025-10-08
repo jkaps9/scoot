@@ -5,9 +5,9 @@ console.log("JAVASCRIPT!");
 const faqItems = document.querySelectorAll(".faq__item");
 
 faqItems.forEach((faqItem) => {
-  const chevron = faqItem.querySelector(".faq__item--title-row .chevron");
+  const question = faqItem.querySelector(".faq__item--title-row");
   const answer = faqItem.querySelector(".faq__item--answer");
-  chevron.addEventListener("click", () => {
+  question.addEventListener("click", () => {
     answer.classList.toggle("visible");
   });
 });
