@@ -406,7 +406,9 @@ footer {
     background-color: map.get(variables.$colors, "snow");
     padding: 2rem 1.75rem;
     text-align: start;
-
+    &:hover {
+      background-color: rgba(map.get(variables.$colors, "yellow"), 0.15);
+    }
     p {
       color: map.get(variables.$colors, "dark-navy");
     }
