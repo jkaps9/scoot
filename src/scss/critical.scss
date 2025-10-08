@@ -122,6 +122,8 @@ header {
   background-repeat: no-repeat;
   min-height: 40.625rem;
   position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
 
   h1 {
     color: inherit;
@@ -150,8 +152,9 @@ header {
 }
 
 .side-by-side {
-  margin: 7.5rem 0;
   position: relative;
+  max-width: 1440px;
+  margin: 7.5rem 0;
 
   .container {
     text-align: center;
@@ -177,6 +180,8 @@ header {
     height: 0;
     position: absolute;
   }
+
+  // TODO: fix side-by-side styling to not rely on child positioning
 
   &:nth-child(2) {
     .left-downward-arrow {
@@ -283,6 +288,8 @@ footer {
 .process {
   padding: 7.5rem 0;
   text-align: center;
+  max-width: 1440px;
+  margin: 0 auto;
 
   .container {
     display: flex;
@@ -305,6 +312,8 @@ footer {
     visibility: hidden;
     height: 0;
     position: absolute;
+
+    max-width: 60.3125rem;
   }
   // TODO: reduce size of icons
 }
@@ -821,5 +830,12 @@ footer {
       bottom: 19rem;
       left: 0;
     }
+  }
+}
+
+@media (min-width: 90rem) {
+  .side-by-side {
+    overflow: hidden;
+    margin: 7.5rem auto;
   }
 }
