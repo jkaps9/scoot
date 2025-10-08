@@ -598,6 +598,7 @@ footer {
   }
 
   .map {
+    // TODO: add arrow below location on map
     picture {
       display: relative;
     }
@@ -728,6 +729,25 @@ footer {
         top: 5rem;
         right: 5rem;
       }
+    }
+  }
+
+  .location-cta {
+    .container {
+      flex-direction: row;
+      text-align: start;
+    }
+
+    h2 {
+      width: 32%;
+    }
+
+    p {
+      width: 40%;
+    }
+
+    a {
+      margin-left: auto;
     }
   }
 }
