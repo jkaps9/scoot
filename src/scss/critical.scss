@@ -607,10 +607,6 @@ footer {
       background-color: rgba(map.get(variables.$colors, "yellow"), 1);
       width: 7.5rem;
       padding: 0;
-      h4 {
-        font-size: 0.87em;
-        line-height: 2.15;
-      }
 
       &:nth-child(1) {
         top: 3.5rem;
@@ -709,6 +705,29 @@ footer {
 
     .faq__item-container {
       max-width: 50vw;
+    }
+  }
+
+  .map {
+    .location__item {
+      padding: 1.5rem 0;
+      width: 11.8125rem;
+      &:nth-child(1) {
+        top: 5.25rem;
+        left: 12rem;
+      }
+      &:nth-child(2) {
+        top: 4rem;
+        left: 26rem;
+      }
+      &:nth-child(3) {
+        top: 16rem;
+        right: 8rem;
+      }
+      &:nth-child(4) {
+        top: 5rem;
+        right: 5rem;
+      }
     }
   }
 }
