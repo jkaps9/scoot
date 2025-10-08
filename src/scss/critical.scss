@@ -461,7 +461,8 @@ footer {
 
   .position__item {
     background-color: map.get(variables.$colors, "snow");
-    padding: 2rem;
+    padding: clamp(2rem, 1.4898rem + 2.1769vw, 3rem)
+      clamp(2rem, 0.9796rem + 4.3537vw, 4rem);
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -650,6 +651,14 @@ footer {
         top: 4.25rem;
         right: 2.5rem;
       }
+    }
+  }
+
+  .positions {
+    .position__item {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: start;
     }
   }
 }
