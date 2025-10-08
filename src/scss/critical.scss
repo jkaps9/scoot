@@ -450,6 +450,31 @@ footer {
   }
 }
 
+.positions {
+  margin: 3.5rem 0 7.5rem;
+
+  .position__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .position__item {
+    background-color: map.get(variables.$colors, "snow");
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+
+    .content {
+      h4 {
+        margin-bottom: 0.25rem;
+      }
+    }
+  }
+}
+
 @media (min-width: 48rem) {
   .navbar {
     .logo {
