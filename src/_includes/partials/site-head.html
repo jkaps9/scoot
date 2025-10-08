@@ -25,7 +25,7 @@
         {% include "svgs/logo.svg" %}
       </a>
       <nav
-        class="main-nav"
+        class="main-nav visible"
         role="navigation"
         aria-label="main"
       >
@@ -36,8 +36,8 @@
             </li>
           {% endfor %}
         </ul>
+        {% include "partials/cta-button.html" %}
       </nav>
-      {% include "partials/cta-button.html" %}
     </div>
   </div>
 </header>

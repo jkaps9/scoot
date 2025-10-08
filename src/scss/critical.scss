@@ -115,12 +115,6 @@ header {
   .cta {
     margin-left: auto;
   }
-
-  .cta {
-    visibility: hidden;
-    height: 0;
-    position: absolute;
-  }
 }
 
 .hero {
@@ -493,6 +487,39 @@ footer {
     .content {
       h4 {
         margin-bottom: 0.25rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  // USE FOR MOBILE ONLY STYLINGS SO THEY DON"T MESS WITH BIGGER SCREEN STYLING
+  header {
+    position: relative;
+    .navbar {
+      padding: 1.5rem 0;
+      .main-nav.visible {
+        position: absolute;
+        top: 100%;
+        left: -11%;
+        min-width: 81%;
+        height: calc(100vh - 100%);
+        z-index: 1000;
+        padding: 4rem 2rem 1.5rem;
+
+        background-color: map.get(variables.$colors, "very-dark-navy");
+        color: map.get(variables.$colors, "light-grey");
+        display: flex;
+        flex-direction: column;
+
+        .nav__list {
+          flex-direction: column;
+          font-size: 1.2em;
+        }
+
+        .cta {
+          margin: auto 0 0;
+        }
       }
     }
   }
