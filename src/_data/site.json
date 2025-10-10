@@ -1,6 +1,6 @@
 {
-    "name": "Scoot",
-    "navigation": [
+  "name": "Scoot",
+  "navigation": [
     {
       "text": "About",
       "url": "/about/"
@@ -13,5 +13,5 @@
       "text": "Careers",
       "url": "/careers/"
     }
-    ]
+  ]
 }

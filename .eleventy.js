@@ -51,6 +51,7 @@ export default function (config) {
   });
 
   return {
+    pathPrefix: "/scoot/",
     markdownTemplateEngine: "njk",
     dataTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
@@ -59,4 +60,4 @@ export default function (config) {
       output: "dist",
     },
   };
-};
+}
