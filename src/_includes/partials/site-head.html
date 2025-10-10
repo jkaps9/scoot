@@ -6,7 +6,7 @@
         {% include "svgs/close.svg" %}
       </button>
       <a
-        href="/"
+		      href="{{ '/' | url }}"
         class="logo"
         aria-label="{{ site.name }} - home"
       >
@@ -20,7 +20,7 @@
         <ul class="nav__list">
           {% for item in site.navigation %}
             <li class="nav__item">
-              <a href="{{ item.url }}">{{ item.text }}</a>
+              <a href="{{ item.url | url }}">{{ item.text }}</a>
             </li>
           {% endfor %}
         </ul>
