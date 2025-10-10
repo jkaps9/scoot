@@ -1,8 +1,8 @@
 ---
 title: "Scoot | Careers"
 pageTitle: "Careers"
-bgImageMobile: "/assets/images/careers-location-hero-mobile.jpg"
-bgImageTablet: "/assets/images/careers-locations-hero-tablet.jpg"
-bgImageDesktop: "/assets/images/careers-locations-hero-desktop.jpg"
+bgImageMobile: "../assets/images/careers-location-hero-mobile.jpg"
+bgImageTablet: "../assets/images/careers-locations-hero-tablet.jpg"
+bgImageDesktop: "../assets/images/careers-locations-hero-desktop.jpg"
 layout: "layouts/careers.html"
 ---
