@@ -355,8 +355,6 @@ footer .navbar .nav__list {
   min-height: clamp(10rem, 7.6145rem + 10.1781vw, 12.5rem);
   display: flex;
   place-items: center;
-  max-width: 1440px;
-  margin: 0 auto;
 }
 .page-header .bg-image,
 .page-header .circles {
