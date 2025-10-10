@@ -233,7 +233,7 @@ header .cta {
 .hero {
   text-align: center;
   color: #ffffff;
-  background-image: url("./assets/images/home-hero-mobile.jpg");
+  background-image: url("../assets/images/home-hero-mobile.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 40.625rem;
@@ -602,7 +602,7 @@ footer .navbar .nav__list {
     position: relative;
   }
   .hero {
-    background-image: url("./assets/images/home-hero-tablet.jpg");
+    background-image: url("../assets/images/home-hero-tablet.jpg");
   }
   .hero .arrow {
     left: -7.94rem;
@@ -793,7 +793,7 @@ footer .navbar .nav__list {
 }
 @media (min-width: 80rem) {
   .hero {
-    background-image: url("./assets/images/home-hero-desktop.jpg");
+    background-image: url("../assets/images/home-hero-desktop.jpg");
     text-align: start;
     place-content: start;
   }
