@@ -139,7 +139,7 @@ header {
 .hero {
   text-align: center;
   color: map.get(variables.$colors, "white");
-  background-image: url("./assets/images/home-hero-mobile.jpg");
+  background-image: url("../assets/images/home-hero-mobile.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 40.625rem;
@@ -585,7 +585,7 @@ footer {
   }
 
   .hero {
-    background-image: url("./assets/images/home-hero-tablet.jpg");
+    background-image: url("../assets/images/home-hero-tablet.jpg");
 
     .arrow {
       left: -7.94rem;
@@ -864,7 +864,7 @@ footer {
 
 @media (min-width: 80rem) {
   .hero {
-    background-image: url("./assets/images/home-hero-desktop.jpg");
+    background-image: url("../assets/images/home-hero-desktop.jpg");
     text-align: start;
     place-content: start;
 
