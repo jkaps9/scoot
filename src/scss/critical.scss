@@ -864,7 +864,6 @@ footer {
 
 @media (min-width: 80rem) {
   .hero {
-    // TODO: fix svgs to be more dynamic so they adapt with the screen
     background-image: url("/assets/images/home-hero-desktop.jpg");
     text-align: start;
     place-content: start;
@@ -881,7 +880,8 @@ footer {
     }
     .arrow {
       bottom: 10.325rem;
-      left: 44rem;
+      left: auto;
+      right: clamp(13.5rem, -22.5rem + 45vw, 18rem);
     }
 
     .circles {
@@ -892,8 +892,9 @@ footer {
     .line {
       visibility: visible;
       height: auto;
+      position: absolute;
       bottom: 19rem;
-      left: 0;
+      left: calc(-1 * clamp(0rem, 56.25rem + -62.5vw, 6.25rem));
     }
   }
 }
