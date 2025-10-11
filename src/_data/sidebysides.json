@@ -8,7 +8,8 @@
         "altText": "telemetry"
       },
       "includeButton": true,
-      "buttonText": "Learn More"
+      "buttonText": "Learn More",
+      "arrowSvg": "svgs/left-downward-arrow.svg"
     },
     {
       "title": "Coming to a city near you",
@@ -18,7 +19,8 @@
         "altText": "city near you"
       },
       "includeButton": true,
-      "buttonText": "Learn More"
+      "buttonText": "Learn More",
+      "arrowSvg": "svgs/right-arrow.svg"
     },
     {
       "title": "Zero hassle payments",
@@ -28,7 +30,8 @@
         "altText": "payments"
       },
       "includeButton": true,
-      "buttonText": "Learn More"
+      "buttonText": "Learn More",
+      "arrowSvg": "svgs/left-downward-arrow.svg"
     }
   ],
   "about": [
@@ -38,7 +41,8 @@
       "img": {
         "src": "/assets/images/digital-era.jpg",
         "altText": "digital era"
-      }
+      },
+      "arrowSvg": "svgs/left-upward-arrow.svg"
     },
     {
       "title": "Better urban living",
@@ -46,7 +50,8 @@
       "img": {
         "src": "/assets/images/better-living.jpg",
         "altText": "better living"
-      }
+      },
+      "arrowSvg": "svgs/right-arrow.svg"
     }
   ],
   "careers": [
@@ -58,7 +63,8 @@
         "altText": "join us"
       },
       "includeButton": true,
-      "buttonText": "Say Hello"
+      "buttonText": "Say Hello",
+      "arrowSvg": "svgs/left-downward-arrow.svg"
     }
   ]
 }
