@@ -9,7 +9,8 @@
       },
       "includeButton": true,
       "buttonText": "Learn More",
-      "arrowSvg": "svgs/left-downward-arrow.svg"
+      "arrowSvg": "svgs/left-downward-arrow.svg",
+      "class": "bleed-right"
     },
     {
       "title": "Coming to a city near you",
@@ -20,7 +21,8 @@
       },
       "includeButton": true,
       "buttonText": "Learn More",
-      "arrowSvg": "svgs/right-arrow.svg"
+      "arrowSvg": "svgs/right-arrow.svg",
+      "class": "bleed-left"
     },
     {
       "title": "Zero hassle payments",
@@ -31,7 +33,8 @@
       },
       "includeButton": true,
       "buttonText": "Learn More",
-      "arrowSvg": "svgs/left-downward-arrow.svg"
+      "arrowSvg": "svgs/left-downward-arrow.svg",
+      "class": "bleed-right last"
     }
   ],
   "about": [
@@ -42,7 +45,8 @@
         "src": "/assets/images/digital-era.jpg",
         "altText": "digital era"
       },
-      "arrowSvg": "svgs/left-upward-arrow.svg"
+      "arrowSvg": "svgs/left-upward-arrow.svg",
+      "class": "bleed-right"
     },
     {
       "title": "Better urban living",
@@ -51,7 +55,8 @@
         "src": "/assets/images/better-living.jpg",
         "altText": "better living"
       },
-      "arrowSvg": "svgs/right-arrow.svg"
+      "arrowSvg": "svgs/right-arrow.svg",
+      "class": "bleed-left about"
     }
   ],
   "careers": [
@@ -64,7 +69,8 @@
       },
       "includeButton": true,
       "buttonText": "Say Hello",
-      "arrowSvg": "svgs/left-downward-arrow.svg"
+      "arrowSvg": "svgs/left-downward-arrow.svg",
+      "class": "bleed-right"
     }
   ]
 }

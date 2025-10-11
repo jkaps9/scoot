@@ -198,10 +198,7 @@ header {
     gap: 2rem;
   }
 
-  .left-downward-arrow,
-  .right-arrow,
   .circle {
-    // TODO: position svgs appropriately
     visibility: hidden;
     height: 0;
     position: absolute;
@@ -210,24 +207,35 @@ header {
   // TODO: fix side-by-side styling to not rely on child positioning
 
   .left-downward-arrow {
-    visibility: visible;
-    height: auto;
+    position: absolute;
     top: clamp(10.8125rem, 2.8211rem + 34.0967vw, 19.1875rem);
     left: 2rem;
   }
 
   .right-arrow {
-    visibility: visible;
-    height: auto;
+    position: absolute;
     top: 0;
     left: calc(-1 * clamp(6.4375rem, 17.0635rem + -22.1374vw, 11.875rem));
   }
 
-  .left-downward-arrow {
-    visibility: visible;
-    height: auto;
-    top: clamp(0rem, -5.0692rem + 21.6285vw, 5.3125rem);
-    left: clamp(6.5rem, -12.2858rem + 80.1527vw, 26.1875rem);
+  .left-upward-arrow {
+    position: absolute;
+    top: clamp(8.3125rem, 0.2615rem + 34.3511vw, 16.75rem);
+    left: 2rem;
+  }
+
+  &.about {
+    .right-arrow {
+      left: auto;
+      right: 2rem;
+    }
+  }
+
+  &.last {
+    .left-downward-arrow {
+      top: clamp(0rem, -5.0692rem + 21.6285vw, 5.3125rem);
+      left: clamp(6.5rem, -12.2858rem + 80.1527vw, 26.1875rem);
+    }
   }
 }
 
@@ -607,19 +615,19 @@ footer {
       z-index: -1;
     }
 
-    &:nth-child(3),
-    &:nth-child(5) {
+    &.bleed-right {
       .circle {
         right: -21.875rem;
       }
     }
 
-    &:nth-child(4) {
+    &.bleed-left {
       .circle {
         left: -21.875rem;
       }
     }
 
+    &:nth-child(2),
     &:nth-child(3) {
       .left-downward-arrow {
         top: 19.1875rem;
@@ -744,7 +752,7 @@ footer {
       justify-content: space-between;
     }
 
-    &:nth-child(odd) .container {
+    &.bleed-right .container {
       flex-direction: row-reverse;
     }
 
@@ -752,6 +760,26 @@ footer {
       .left-downward-arrow {
         left: auto;
         right: -23.75rem;
+      }
+    }
+
+    .left-upward-arrow {
+      left: auto;
+      right: 0;
+    }
+
+    &.about {
+      .right-arrow {
+        left: calc(-1 * clamp(6.4375rem, 17.0635rem + -22.1374vw, 11.875rem));
+        right: auto;
+      }
+    }
+
+    &:nth-child(2),
+    &:nth-child(3) {
+      .left-downward-arrow {
+        top: auto;
+        bottom: 0;
       }
     }
 
@@ -898,7 +926,7 @@ footer {
 
 @media (min-width: 90rem) {
   .side-by-side {
-    overflow: hidden;
+    // overflow: hidden;
     margin: 7.5rem auto;
   }
 }
