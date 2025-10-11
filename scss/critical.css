@@ -808,6 +808,10 @@ footer .navbar .nav__list {
   .location-cta a {
     margin-left: auto;
   }
+  .page-header {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
 }
 @media (min-width: 80rem) {
   .hero {
