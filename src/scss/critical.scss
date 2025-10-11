@@ -15,6 +15,10 @@ body {
   color: map.get(variables.$colors, "dim-grey");
 }
 
+section{
+  overflow-x: hidden;
+}
+
 h1,
 h2,
 h3,
