@@ -19,6 +19,7 @@
   </head>
   <body>
     {% include "partials/site-head.html" %}
+    {% block page_header %}{% endblock %}
     <main>{% block content %}{% endblock %}</main>
     {% include "partials/site-footer.html" %}
   </body>
