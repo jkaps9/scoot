@@ -292,19 +292,19 @@ header .cta {
   height: 0;
   position: absolute;
 }
-.side-by-side:nth-child(2) .left-downward-arrow {
+.side-by-side .left-downward-arrow {
   visibility: visible;
   height: auto;
   top: clamp(10.8125rem, 2.8211rem + 34.0967vw, 19.1875rem);
   left: 2rem;
 }
-.side-by-side:nth-child(3) .right-arrow {
+.side-by-side .right-arrow {
   visibility: visible;
   height: auto;
   top: 0;
   left: calc(-1 * clamp(6.4375rem, 17.0635rem - 22.1374vw, 11.875rem));
 }
-.side-by-side:nth-child(4) .left-downward-arrow {
+.side-by-side .left-downward-arrow {
   visibility: visible;
   height: auto;
   top: clamp(0rem, -5.0692rem + 21.6285vw, 5.3125rem);
@@ -624,13 +624,14 @@ footer .navbar .nav__list {
     top: 0;
     z-index: -1;
   }
-  .side-by-side:nth-child(2) .circle, .side-by-side:nth-child(4) .circle {
+  .side-by-side:nth-child(3) .circle, .side-by-side:nth-child(5) .circle {
     right: -21.875rem;
   }
-  .side-by-side:nth-child(3) .circle {
+  .side-by-side:nth-child(4) .circle {
     left: -21.875rem;
   }
-  .side-by-side:nth-child(2) .left-downward-arrow {
+  .side-by-side:nth-child(3) .left-downward-arrow {
+    top: 19.1875rem;
     right: 0;
     left: auto;
   }
@@ -713,10 +714,10 @@ footer .navbar .nav__list {
     display: flex;
     justify-content: space-between;
   }
-  .side-by-side:nth-child(even) .container {
+  .side-by-side:nth-child(odd) .container {
     flex-direction: row-reverse;
   }
-  .side-by-side:nth-child(4) .left-downward-arrow {
+  .side-by-side:nth-child(5) .left-downward-arrow {
     left: auto;
     right: -23.75rem;
   }
