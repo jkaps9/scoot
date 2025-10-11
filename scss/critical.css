@@ -285,28 +285,31 @@ header .cta {
   align-items: center;
   gap: 2rem;
 }
-.side-by-side .left-downward-arrow,
-.side-by-side .right-arrow,
 .side-by-side .circle {
   visibility: hidden;
   height: 0;
   position: absolute;
 }
 .side-by-side .left-downward-arrow {
-  visibility: visible;
-  height: auto;
+  position: absolute;
   top: clamp(10.8125rem, 2.8211rem + 34.0967vw, 19.1875rem);
   left: 2rem;
 }
 .side-by-side .right-arrow {
-  visibility: visible;
-  height: auto;
+  position: absolute;
   top: 0;
   left: calc(-1 * clamp(6.4375rem, 17.0635rem - 22.1374vw, 11.875rem));
 }
-.side-by-side .left-downward-arrow {
-  visibility: visible;
-  height: auto;
+.side-by-side .left-upward-arrow {
+  position: absolute;
+  top: clamp(8.3125rem, 0.2615rem + 34.3511vw, 16.75rem);
+  left: 2rem;
+}
+.side-by-side.about .right-arrow {
+  left: auto;
+  right: 2rem;
+}
+.side-by-side.last .left-downward-arrow {
   top: clamp(0rem, -5.0692rem + 21.6285vw, 5.3125rem);
   left: clamp(6.5rem, -12.2858rem + 80.1527vw, 26.1875rem);
 }
@@ -624,13 +627,13 @@ footer .navbar .nav__list {
     top: 0;
     z-index: -1;
   }
-  .side-by-side:nth-child(3) .circle, .side-by-side:nth-child(5) .circle {
+  .side-by-side.bleed-right .circle {
     right: -21.875rem;
   }
-  .side-by-side:nth-child(4) .circle {
+  .side-by-side.bleed-left .circle {
     left: -21.875rem;
   }
-  .side-by-side:nth-child(3) .left-downward-arrow {
+  .side-by-side:nth-child(2) .left-downward-arrow, .side-by-side:nth-child(3) .left-downward-arrow {
     top: 19.1875rem;
     right: 0;
     left: auto;
@@ -714,12 +717,24 @@ footer .navbar .nav__list {
     display: flex;
     justify-content: space-between;
   }
-  .side-by-side:nth-child(odd) .container {
+  .side-by-side.bleed-right .container {
     flex-direction: row-reverse;
   }
   .side-by-side:nth-child(5) .left-downward-arrow {
     left: auto;
     right: -23.75rem;
+  }
+  .side-by-side .left-upward-arrow {
+    left: auto;
+    right: 0;
+  }
+  .side-by-side.about .right-arrow {
+    left: calc(-1 * clamp(6.4375rem, 17.0635rem - 22.1374vw, 11.875rem));
+    right: auto;
+  }
+  .side-by-side:nth-child(2) .left-downward-arrow, .side-by-side:nth-child(3) .left-downward-arrow {
+    top: auto;
+    bottom: 0;
   }
   .side-by-side .content {
     max-width: 445px;
@@ -828,7 +843,6 @@ footer .navbar .nav__list {
 }
 @media (min-width: 90rem) {
   .side-by-side {
-    overflow: hidden;
     margin: 7.5rem auto;
   }
 }
