@@ -126,6 +126,10 @@ body {
   color: #939caa;
 }
 
+section {
+  overflow-x: hidden;
+}
+
 h1,
 h2,
 h3,
