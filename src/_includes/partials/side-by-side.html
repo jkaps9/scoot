@@ -9,7 +9,7 @@
       <p>{{ item.description }}</p>
       {% if includeButton or item.includeButton %}
         <a
-          href="/about/"
+          href="{{ '/about/' | url }}"
           class="btn--solid"
         >
           {{ item.buttonText }}
